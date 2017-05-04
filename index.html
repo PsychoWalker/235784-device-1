@@ -26,7 +26,7 @@
             <ul class="catalogue-menu-list-header">
                 <li class="catalogue-menu-item-header">
                     <a href="catalog.html" class="cabinet-link-down">Каталог товаров</a>
-                    <input type="checkbox" id="submenu-activator">
+                    <input type="checkbox" id="submenu-activator" class="submenu-activator">
                     <label for="submenu-activator" class="submenu-activator-label submenu-open"></label></li>
                     <li class="catalogue-menu-item-header"><a class="cabinet-link-down" href="#">Доставка</a></li>
                     <li class="catalogue-menu-item-header"><a class="cabinet-link-down" href="#">Гарантия</a></li>
@@ -54,12 +54,12 @@
 
       <main class="main-frame clearfix">
         <div class="wrapper">
-            <input type="radio" class="slider-btn" id="btn-1" name="toggle" checked>
-            <input type="radio" class="slider-btn" id="btn-2" name="toggle">
-            <input type="radio" class="slider-btn" id="btn-3" name="toggle">
+            <input type="radio" class="slider-btn btn-1" id="btn-1" name="toggle" checked>
+            <input type="radio" class="slider-btn btn-2" id="btn-2" name="toggle">
+            <input type="radio" class="slider-btn btn-3" id="btn-3" name="toggle">
             <div class="main-slider">
 
-                <div class="slide clearfix" id="slide1">
+                <div class="slide slide1 clearfix" id="slide1">
                     <div class="image-item">
                         <img src="img/slide-1.png" width="384" height="486" alt="Плаки для селфи" class="slide-picture">
                     </div>
@@ -95,7 +95,7 @@
                     </div>
                 </div>
 
-                <div class="slide clearfix" id="slide2">
+                <div class="slide slide2 clearfix" id="slide2">
                     <div class="image-item slide-2">
                      <img src="img/slide-2.png" width="345" height="485" alt="фитнес-браслеты-">
                  </div>
@@ -123,7 +123,7 @@
                 </div>
             </div>
 
-            <div class="slide clearfix" id="slide3">
+            <div class="slide slide3 clearfix" id="slide3">
                 <div class="image-item slide-3">
                   <img src="img/slide-3.png" width="526" height="334" alt="дрон">
               </div>
@@ -219,32 +219,32 @@
 
     <div class="services-content-wrapper clearfix">
         <div class="services-menu">
-            <input type="radio" id="tab-1" name="tabs" checked>
-            <input type="radio" id="tab-2" name="tabs">
-            <input type="radio" id="tab-3" name="tabs">
+            <input type="radio" id="tab-1" class="tab-1" name="tabs" checked>
+            <input type="radio" id="tab-2" class="tab-1" name="tabs">
+            <input type="radio" id="tab-3" class="tab-1" name="tabs">
             
             
             
 
-            <label for="tab-1" id="tab-title-1" class="menu-item btn tabs-menu" title="Доставка"><span class="opacity-link">Доставка</span></label>
-            <label for="tab-2" id="tab-title-2" class="menu-item btn tabs-menu" title="Гарантия"><span class="opacity-link">Гарантия</span></label>
-            <label for="tab-3" id="tab-title-3" class="menu-item btn tabs-menu" title="Кредит"><span class="opacity-link">Кредит</span></label>
+            <label for="tab-1" id="tab-title-1" class="menu-item btn tabs-menu tab-title-1" title="Доставка"><span class="opacity-link">Доставка</span></label>
+            <label for="tab-2" id="tab-title-2" class="menu-item btn tabs-menu tab-title-2" title="Гарантия"><span class="opacity-link">Гарантия</span></label>
+            <label for="tab-3" id="tab-title-3" class="menu-item btn tabs-menu tab-title-3" title="Кредит"><span class="opacity-link">Кредит</span></label>
             
-            <section id="content-1" class="service-tab">
+            <section id="content-1" class="service-tab content-1">
                 <h2 class="service-tab-headline">Доставка</h2>
                 <p class="service-tab-description">Мы с удовольствием доставим ваш товар прямо к вашему<br>подъезду совершенно бесплатно! Ведь мы неплохо<br>заработаем, поднимая его на ваш этаж.</p>
                 
                 <div class="img-delivery"><img src="img/delivery.png" width="136" height="164" alt="delivery"></div>
             </section>
 
-            <section id="content-2" class="service-tab">
+            <section id="content-2" class="service-tab content-2">
                 <h2 class="service-tab-headline">Гарантия</h2>
                 <p class="service-tab-description">Если из-за возгорания купленного у нас товара у вас сгорит<br>дом - не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
 
                 <div class="img-delivery-2"><img src="img/warranty.png" width="171" height="195" alt="warranty"></div>
             </section>
 
-            <section id="content-3" class="service-tab">
+            <section id="content-3" class="service-tab content-3">
                 <h2 class="service-tab-headline">Кредит</h2>
                 <p class="service-tab-description">Залезть в долговую яму стало проще! Кредитные<br>консультанты подберут для вас наиболее выгодые<br>условия кредита. Выгодные для нашего банка, разумеется.</p>
 
