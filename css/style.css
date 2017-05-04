@@ -522,6 +522,7 @@
 
 .slider-controls label {
 	display: inline-block;
+	vertical-align: center;
 	width: 5px;
 	height: 5px;
 	margin-right: 22px;
@@ -913,6 +914,7 @@
 
 .cabinet-menu-item-footer {
 	display: inline-block;
+	vertical-align: center;
 	text-decoration: none;
 	color: #fff;
 	position: relative;
@@ -1334,6 +1336,7 @@
 
 .breadcrumbs li{
 	display: inline-block;
+	vertical-align: center;
 	padding-left: 19px;
 	position: relative;
 }
@@ -1770,6 +1773,7 @@
 
 .input-text {
 	display: inline-block;
+	vertical-align: center;
 	margin-top: 3px;
 }
 
@@ -1860,6 +1864,7 @@
 	width: 10px;
 	height: 10px;
 	display: inline-block;
+	vertical-align: center;
 	border: 2px solid black;
 	border-radius: 50%;
 	cursor: pointer;
@@ -1891,6 +1896,7 @@
 .price-number {
 	width: 80px;
 	display: inline-block;
+	vertical-align: center;
 	font-size: 14px;
 	line-height: 22px;
 	font-weight: normal;
