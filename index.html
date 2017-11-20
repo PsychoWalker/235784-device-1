@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
@@ -147,7 +147,7 @@
                     </div>
                 </div>
             </div>
-        </div>                
+        </div>
 
         <div class="slider-controls">
             <label for="btn-1"></label>
@@ -157,53 +157,65 @@
     </div>
 
     <div class="product-categories clearfix">
+      <a href="#" class="product-category-link">
         <div class="product-category">
             <div class="product-category-icon">
-                <a href="#" class="product-category-link"><img src="img/popular-1.png" width="97" height="55" alt="Виртуальная реальность"></a>
+                <img src="img/popular-1.png" width="97" height="55" alt="Виртуальная реальность">
             </div>
             <div class="product-category-name">
                 <span class="description-name">Виртуальная реальность</span>
             </div>
+      </a>
         </div>
         <div class="product-category">
+          <a href="#" class="product-category-link">
             <div class="product-category-icon">
-                <a href="#" class="product-category-link"><img src="img/popular-2.png" width="86" height="117" alt="Моноподы для селфи"></a>
+               <img src="img/popular-2.png" width="86" height="117" alt="Моноподы для селфи">
             </div>
             <div class="product-category-name">
                 <span class="description-name">Моноподы для селфи</span>
             </div>
+          </a>
         </div>
         <div class="product-category">
+          <a href="#" class="product-category-link">
             <div class="product-category-icon">
-                <a href="#" class="product-category-link"><img src="img/popular-3.png" width="71" height="87" alt="Экшн-камеры"></a>
+                <img src="img/popular-3.png" width="71" height="87" alt="Экшн-камеры">
             </div>
             <div class="product-category-name">
                 <span class="description-name">Экшн-камеры</span>
             </div>
+          </a>
         </div>
         <div class="product-category">
+          <a href="#" class="product-category-link">
             <div class="product-category-icon">
-                <a href="#" class="product-category-link"><img src="img/popular-4.png" width="107" height="65" alt="Фитнес-браслеты"></a>
+                <img src="img/popular-4.png" width="107" height="65" alt="Фитнес-браслеты">
             </div>
             <div class="product-category-name">
                 <span class="description-name">Фитнес-браслеты</span>
             </div>
+          </a>
         </div>
         <div class="product-category">
+          <a href="#" class="product-category-link">
             <div class="product-category-icon">
-                <a href="#" class="product-category-link"><img src="img/popular-5.png" width="56" height="98" alt="Умные часы"></a>
+                <img src="img/popular-5.png" width="56" height="98" alt="Умные часы">
             </div>
             <div class="product-category-name">
-                <span class="description-name">Умные часы</span>
+                <span class="description-name">Умные часы </span>
             </div>
+          </a>
         </div>
         <div class="product-category">
+          <a href="#" class="product-category-link">
             <div class="product-category-icon">
-                <a href="#" class="product-category-link"><img src="img/popular-6.png" width="132" height="69" alt="Квадрокоптеры"></a>
+                <img src="img/popular-6.png" width="132" height="69" alt="Квадрокоптеры">
             </div>
             <div class="product-category-name">
                 <span class="description-name">Квадрокоптеры</span>
             </div>
+          </a>
         </div>
     </div>
 </div>
@@ -219,7 +231,7 @@
             <label for="tab-1" id="tab-title-1" class="menu-item btn tabs-menu tab-title-1" title="Доставка"><span class="opacity-link">Доставка</span></label>
             <label for="tab-2" id="tab-title-2" class="menu-item btn tabs-menu tab-title-2" title="Гарантия"><span class="opacity-link">Гарантия</span></label>
             <label for="tab-3" id="tab-title-3" class="menu-item btn tabs-menu tab-title-3" title="Кредит"><span class="opacity-link">Кредит</span></label>
-            
+
             <section id="content-1" class="service-tab content-1">
                 <h2 class="service-tab-headline">Доставка</h2>
                 <div class="text-width">
@@ -231,7 +243,7 @@
             <section id="content-2" class="service-tab content-2">
                 <h2 class="service-tab-headline">Гарантия</h2>
                 <div class="text-width">
-                    <p class="service-tab-description">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                    <p class="service-tab-description">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
                 </div>
                 <div class="img-delivery-2"><img src="img/warranty.png" width="171" height="195" alt="warranty"></div>
             </section>
@@ -245,6 +257,8 @@
             </section>
         </div>
     </div>
+ </div>
+</div>
 
     <div class="wrapper">
         <div class="brands ">
@@ -332,7 +346,7 @@
     <label class="text-label">Ваше имя:<input class="site-enter-input" type="text" name="First-name" placeholder="Представтесь, пожалуйста"></label>
     <label class="text-label">Ваш e-mail:<input class="site-enter-input" type="text" name="e-mail" placeholder="Для отправки ответа"></label>
     <label class="text-label">Текст письма:<textarea class="message-form" name="text" placeholder="В свободной форме"></textarea></label>
-    
+
     <button class="btn-contact-form" type="button" title="Отправить">Отправить</button>
 </form>
 </div>

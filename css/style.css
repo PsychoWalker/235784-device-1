@@ -1,12 +1,29 @@
 @font-face {
-	font-family: Gilroy; 
-	src: url(../fonts/gilroylight.woff2); 
-	font-family: Gilroy Extra Bold;
-	src: url(../fonts/gilroyextrabold.woff2);
-	font-family: Open Sans;
-	src: url(../fonts/opensans.woff2);
-	font-family: OpenSansLight;
-	src: url(../fonts/opensanslight.woff2);
+	font-family: 'Gilroy';
+	src: url(../fonts/gilroylight.woff2) format('woff2'),
+       url(../fonts/gilroylight.woff) format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url(../fonts/gilroyextrabold.woff2) format('woff2'),
+       url(../fonts/gilroyextrabold.woff) format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../fonts/opensans.woff2) format('woff2')
+		   url(../fonts/opensans.woff) format('woff');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../fonts/opensanslight.woff2) format('woff2')
+		   url(../fonts/opensanslight.woff) format('woff');
+  font-weight: 100;
 }
 
 /** UTILS **/
@@ -66,6 +83,18 @@
 	float: left;
 	width: 500px;
 	vertical-align: center;
+	position: relative;
+}
+
+.search-form::before {
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	left: 7px;
+	top: 51px;
+	background-image: url('../img/sprite/search.png');
+	background-repeat: no-repeat;
 }
 
 .site-search-input {
@@ -108,7 +137,7 @@
 	opacity: 0;
 	display: inline-block;
 	background: none;
-	position: relative;    
+	position: relative;
 	width: 81px;
 	height: 45px;
 	top: -2px;
@@ -146,7 +175,7 @@
 	padding: 0px;
 	margin: 0px;
 	vertical-align: center;
-	
+
 }
 .cabinet-menu-item-header {
 	position: relative;
@@ -582,7 +611,7 @@
 
 .product-categories {
 	margin-top: 73px;
-	height: 235px;
+	min-height: 235px;
 	overflow: hidden;
 }
 
@@ -592,7 +621,11 @@
 	width: 160px;
 }
 
-.product-category:nth-child(6n) {
+.product-category a {
+  text-decoration: none;
+}
+
+.product-category:nth-child(7n) {
 	margin-right: 0px;
 }
 
@@ -621,8 +654,7 @@
 
 .product-category-name {
 	padding-top: 35px;
-	overflow: hidden;
-	height: 50px;
+	min-height: 50px;
 }
 
 .product-category:nth-child(2) .product-category-name{
@@ -647,7 +679,7 @@
 
 .services-menu {
 	width: 277px;
-	height: 200px;
+	min-height: 200px;
 	position: relative;
 	float: left;
 	padding: 80px 0px 0px 0px;
@@ -680,14 +712,14 @@
 	margin-left: 400px;
 	width: 714px;
 	margin-top: -204px;
-	height: 300px;
+	min-height: 300px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	position: relative;
 }
 
 .text-width {
-	width: 439px;	
+	width: 439px;
 }
 
 .service-tab-description {
@@ -719,7 +751,7 @@
 }
 
 .tab-wrapper {
-	height: 215px;
+	min-height: 215px;
 }
 
 .tabs-menu:hover {
@@ -732,10 +764,10 @@
 	display: block;
 }
 
-.tab-1:checked ~ .tab-title-1, 
-.tab-2:checked ~ .tab-title-2, 
-.tab-3:checked ~ .tab-title-3 { 
-	background-color: #000; 
+.tab-1:checked ~ .tab-title-1,
+.tab-2:checked ~ .tab-title-2,
+.tab-3:checked ~ .tab-title-3 {
+	background-color: #000;
 	background-image: none;
 	width: 264px;
 	text-align: left;
@@ -751,8 +783,8 @@ margin-bottom: 24px;
 margin-bottom: 25px;
 }
 
-.tab-1:checked ~ .tab-title-1>span, 
-.tab-2:checked ~ .tab-title-2>span, 
+.tab-1:checked ~ .tab-title-1>span,
+.tab-2:checked ~ .tab-title-2>span,
 .tab-3:checked ~ .tab-title-3>span {
 	color: #ffe280;
 }
@@ -796,7 +828,7 @@ margin-bottom: 25px;
 
 .brands {
 	font-size: 0;
-	margin-top: 183px; 
+	margin-top: 183px;
 }
 
 .brand-link:not(:nth-child(1)) {
@@ -1030,7 +1062,7 @@ margin-bottom: 25px;
 	font-family: 'OpenSansLight', sans-serif, 'Tahoma';
 	letter-spacing: 0;
 	width: 220px;
-	
+
 }
 
 .company-services {
@@ -1731,7 +1763,7 @@ margin-bottom: 25px;
 
 .compare-link a {
 	text-decoration: none;
-	color: #000;	
+	color: #000;
 }
 
 .product-color,
@@ -1825,7 +1857,7 @@ margin-bottom: 25px;
 .list label {
 	font-size: 14px;
 	line-height: 18px;
-	
+
 	color: #000000;
 	font-family: 'OpenSans', sans-serif, 'Tahoma';
 	letter-spacing: 0px;
